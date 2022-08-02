@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 업로드(MULTI)</title>
+</head>
+<body>
+  <h4><span style="color:blue"> 파일 업로드(Multi)</span></h4>
+  <form th:action="@{/fileupload/multi}" method="post" enctype="multipart/form-data">
+
+      <input type="file" name="file1" multiple="multiple"/><br/>
+      <input type="file" name="file2" multiple="multiple"/><br/>
+      <input type="file" name="file3" multiple="multiple"/><br/>
+      <input type="file" name="file4" multiple="multiple"/><br/>
+      <input type="file" name="file5" multiple="multiple"/><br><br/>
+
+      <input type="submit"/>
+  </form>
+
+</body>
+</html>

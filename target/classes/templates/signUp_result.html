@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:object="${form}">
+        <p><h1>사용자id : <span style="color:blue" th:text="*{form.userId}">hong</span></h1></p>
+        <p><h1>비밀번호 : <span style="color:blue" th:text="*{form.password}">1234</span></h1></p>
+        <p><h1>이름 : <span style="color:blue" th:text="*{form.name}">홍길동</span></h1></p>
+        <p><h1>생년월일 : <span style="color:blue" th:text="*{form.birth}">2000-01-01</span></h1></p>
+        <p><h1>나이 : <span style="color:blue" th:text="*{form.age}">22</span></h1></p>
+    </div>
+</body>
+</html>
